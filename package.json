@@ -14,7 +14,7 @@
     "dev": "pear dev",
     "test": "brittle test/*.test.js"
   },
-  "bin": "node ./index.js",
+  "bin": "bare ./index.js",
   "dependencies": {
     "b4a": "^1.6.6",
     "bare-fs": "^2.3.0",
@@ -26,5 +26,16 @@
   },
   "version": "1.0.0",
   "description": "pearblock-npm-cli-tool",
-  "author": "Josue ALeman"
+  "author": "alemanjosh7",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/alemanjosh7/pearblock-npm-cli-tool.git"
+  },
+  "keywords": [
+    "pearblock-npm-cli-tool"
+  ],
+  "bugs": {
+    "url": "https://github.com/alemanjosh7/pearblock-npm-cli-tool/issues"
+  },
+  "homepage": "https://github.com/alemanjosh7/pearblock-npm-cli-tool#readme"
 }
