@@ -3,7 +3,7 @@
 This app is a CLI dictionary that works as a serverless application using hyperswarm, corestore, hyperbee, b4a, bare-readline and bare-tty, and where you can look for specific information about a Holepunch's blocks or terminology such as Hyperbee, Hyperswarm, etc
 
 ```
-npm i pearblock-npm-cli-tool
+npm i -g pearblock-npm-cli-tool
 ```
 
 ## Usage
