@@ -127,7 +127,7 @@ const ask = async (word, corekey) => {
       }, 1000))
     case 'help':
       console.log(`
-Usage: pearblocks [command] [options]\n
+Usage: pearblock-npm-cli-tool [command] [options]\n
 This app is a CLI dictionary that works as serverless application using hyperswarm, corestore, hyperbee, b4a, bare-readline and bare-tty, and where you can look for specific information about a Holepunch's blocks or terminology such as Hyperbee, Hyperswarm, etc\n
 Commands:\n
   init <key>               Starts importing or seeding Pearblocks Dictionary with a specific Hypercore Key\n
