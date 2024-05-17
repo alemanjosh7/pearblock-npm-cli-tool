@@ -6,16 +6,12 @@ This app is a CLI dictionary that works as a serverless application using hypers
 
 ### Start
 
-First of all, to start using this CLI you need to run the following command.
+First of all, to start CLI you have to do the following commands
 
 ```bash
-pear dev
-```
+Usage: pearblock-npm-cli-tool [command] [options]
 
-After that the CLI will start working and you can execute the following commands
-
-```bash
-Usage: pearblocks [command] [options]
+Options:
 
 Commands:
   init <key>               Starts importing or seeding Pearblocks Dictionary with a specific Hypercore Key
@@ -25,12 +21,12 @@ Commands:
 
 ## Help
 
-Use `pearblocks --help` for more information.
+Use `pearblock-npm-cli-tool help` for more information.
 
 ## Import dictionary
 
 ```bash
-> pearblock init dict
+pearblock-npm-cli-tool init dict
 Your core key is: dict
 Importing dictionary...
 Dictionary imported!
@@ -39,7 +35,7 @@ Dictionary imported!
 In the case that with [key] has already imported the dictionary with that specific Hypercore key then it would output this
 
 ```bash
-> pearblock init dict
+pearblock-npm-cli-tool init dict
 Your core key is: dict
 Seeding dictionary...
 Dictionary seeded!
@@ -48,14 +44,14 @@ Dictionary seeded!
 ## Request hyperbee key
 
 ```bash
-> pearblock beekey dict
-> You can connect start asking now with this Hyperbee key: 786ed2df6946c4fe4d24256d15b9428aef88a5206f2eecfaff4cb72245dc1486
+pearblock-npm-cli-tool beekey dict
+You can connect start asking now with this Hyperbee key: 786ed2df6946c4fe4d24256d15b9428aef88a5206f2eecfaff4cb72245dc1486
 ```
 
 ## Asking to the dictionary
 
 ```bash
-> pearblock ask hypercore myKey
+pearblock-npm-cli-tool ask hypercore mykey
 The pearblock you want to know about is: hypercore
 Holepunch's Block hypercore is: Hypercore is a secure, distributed append-only log built for sharing large datasets and streams of real-time data. It comes with a secure transport protocol, making it easy to build fast and scalable peer-to-peer applications.
 ```
@@ -63,6 +59,6 @@ Holepunch's Block hypercore is: Hypercore is a secure, distributed append-only l
 If there is no response the following output would be received
 
 ```bash
-> pearblock ask hypercore
+pearblock-npm-cli-tool ask hypercore
 No dictionary entry for hypercore
 ```
