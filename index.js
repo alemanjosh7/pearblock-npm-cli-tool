@@ -31,7 +31,8 @@ const beekey = async (corekey) => {
   await core.close()
   await store.close()
   swarm.destroy()
-  return 'You can connect from another command like using this Hyperbee key:', b4a.toString(core.key, 'hex')
+  const response = 'You can connect from another command like using this Hyperbee key: ' + b4a.toString(core.key, 'hex')
+  return response
 }
 
 const init_dictionary = async (corekey) => {
