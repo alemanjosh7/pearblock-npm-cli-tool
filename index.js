@@ -32,7 +32,6 @@ const beekey = async (corekey) => {
   await core.close()
   await store.close()
   swarm.destroy()
-  console.log(store.closed)
   return response
 }
 
