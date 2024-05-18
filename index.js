@@ -5,6 +5,7 @@ const Corestore = require('corestore')
 const Hyperbee = require('hyperbee')
 const b4a = require('b4a')
 const process = require('bare-process')
+const file = require('./dict.json')
 
 const notFound = (command) => {
   return `error: unknown command '${command}'`
@@ -48,7 +49,7 @@ const init_dictionary = async (corekey) => {
   })
   await core.ready()
   if (core.length <= 1) {
-    const dict = JSON.parse(await fsp.readFile('./dict.json'))
+    const dict = JSON.parse(JSON.stringify(file))
     const batch = bee.batch()
     for (const { key, value } of dict) {
       await batch.put(key, value)
