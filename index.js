@@ -89,11 +89,10 @@ const ask = async (word, corekey) => {
   let response = ''
 
   await bee.get(word).then(node => {
-    if (!node || !node.value) {
+    if (((!node || !node.value) && response === '')) {
       response = `No dictionary entry for ${word}`
-      return response
     }
-    response = `Holepunch's Block ${word} is: ${node.value}`
+    else response = `Holepunch's Block ${word} is: ${node.value}.`
   })
   await core.close()
   await store.close()
